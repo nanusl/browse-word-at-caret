@@ -15,11 +15,18 @@
  */
 package browsewordatcaret;
 
+import com.intellij.openapi.actionSystem.ActionUpdateThread;
 import com.intellij.openapi.editor.actionSystem.EditorAction;
+import org.jetbrains.annotations.NotNull;
 
 public final class BWACActionBrowsePrevious extends EditorAction {
     public BWACActionBrowsePrevious() {
         super(new BWACHandlerBrowse(BWACHandlerBrowse.BrowseDirection.PREVIOUS));
+    }
+
+    @Override
+    public @NotNull ActionUpdateThread getActionUpdateThread() {
+        return ActionUpdateThread.BGT;
     }
 }
 

@@ -1,0 +1,15 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="grad1">
+            <stop style="--darkreader-inline-stopcolor: #232343;" stop-color="#2C2C54" offset="0%"/>
+            <stop style="--darkreader-inline-stopcolor: #1e2122;" stop-color="#282828" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g>
+        <rect x="0" y="0" id="svg_1" fill="none" height="200" width="200"/>
+        <rect style="--darkreader-inline-stroke: #ff791a;" stroke-width="4" stroke="#FF6A00" fill="url(#grad1)" ry="15" rx="15" height="160" width="160" y="20" x="20"/>
+        <circle style="--darkreader-inline-stroke: #1aff1a;" fill="none" stroke-width="5" stroke="#00FF00" r="40" cy="95" cx="100"/>
+        <rect style="--darkreader-inline-fill: #33cc00;" transform="rotate(-40 137.047 148.282)" stroke="null" fill="#00FF00" ry="15" rx="5" height="40" width="8.87674" y="128.28178" x="132.60885"/>
+        <path style="--darkreader-inline-stroke: #e8e6e3;" fill="none" stroke-width="5" stroke="#FFFFFF" d="m80,80l10,30l10,-25l10,25l10,-30"/>
+    </g>
+</svg>

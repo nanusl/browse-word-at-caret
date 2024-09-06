@@ -33,6 +33,7 @@ public class BWACColorSettingsPage implements ColorSettingsPage {
     private static final AttributesDescriptor[] ATTRIBUTESDESC = {new AttributesDescriptor("BrowseWordAtCaret", BROWSEWORDATCARET)};
 
     private static final Map<String, TextAttributesKey> TAGS = new HashMap<String, TextAttributesKey>();
+
     static {
         TAGS.put("browseWordAtCaret", BROWSEWORDATCARET);
     }

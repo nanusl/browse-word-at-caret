@@ -1,9 +1,7 @@
-<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
-<idea-plugin version="2">
+<idea-plugin url="https://github.com/minman/browse-word-at-caret">
     <id>BrowseWordAtCaret</id>
     <name>BrowseWordAtCaret</name>
-<!--    <version>3.0.5</version>-->
-    <version>3.0-SNAPSHOT</version>
+    <version>3.0.6</version>
     <description><![CDATA[
       Allows to easily browse next/previous word at caret and highlight other appearances of selected word.<br>
       <br>
@@ -12,10 +10,19 @@
       For full documentation see <a href="https://github.com/minman/browse-word-at-caret/blob/master/README.md">README</a>
     ]]></description>
     <vendor url="https://github.com/minman/browse-word-at-caret">Minas Manthos</vendor>
-    <!-- 202 -> 2020.2 -->
-    <idea-version since-build="202.0000"/>
+    <idea-version since-build="242"/>
     <depends>com.intellij.modules.lang</depends>
-    <change-notes><![CDATA[See <a href="https://github.com/minman/browse-word-at-caret/wiki/Change-Notes">change notes</a>.]]></change-notes>
+    <change-notes>
+        <![CDATA[
+            <h3>3.0.6</h3>
+                <ul>
+                    <li>Project structure</li>
+                    <li>Add icon</li>
+                    <li>support IntelliJ IDEA 2024.2</li>
+                </ul>
+            <h3>See <a href="https://github.com/minman/browse-word-at-caret/wiki/Change-Notes">change notes</a>.</h3>
+        ]]>
+    </change-notes>
 
     <extensions defaultExtensionNs="com.intellij">
         <colorSettingsPage implementation="browsewordatcaret.BWACColorSettingsPage"/>
@@ -29,13 +36,13 @@
     <actions>
         <action id="BrowseWordAtCaretPlugin.Next"
                 class="browsewordatcaret.BWACActionBrowseNext"
-                text="Browse to next word"
+                text="Browse to Next Word"
                 description="Browse to next word at caret.">
             <keyboard-shortcut first-keystroke="control alt DOWN" keymap="$default"/>
         </action>
         <action id="BrowseWordAtCaretPlugin.Previous"
                 class="browsewordatcaret.BWACActionBrowsePrevious"
-                text="Browse to previous word"
+                text="Browse to Previous Word"
                 description="Browse to previous word at caret.">
             <keyboard-shortcut first-keystroke="control alt UP" keymap="$default"/>
         </action>
